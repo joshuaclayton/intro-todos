@@ -31,3 +31,13 @@ Then /^I should see the following todos:$/ do |table|
     step %{"#{todo}" should be in my list of things to do}
   end
 end
+
+Then /^I should not see the following todos:$/ do |table|
+  todos = table.raw.flatten
+
+  within "ul.todos" do
+    todos.each do |todo|
+      page.should_not have_css("li", text: todo)
+    end
+  end
+end
