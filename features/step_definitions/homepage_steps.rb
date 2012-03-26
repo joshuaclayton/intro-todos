@@ -7,7 +7,7 @@ Then /^I should see the product name$/ do
 end
 
 Then /^I should see the product description$/ do
-  pending # express the regexp above with the code you wish you had
+  page.should have_css("[data-role='product-description']", text: /todo/)
 end
 
 Then /^I should be able to sign up for an account$/ do
