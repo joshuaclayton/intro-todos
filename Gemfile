@@ -6,9 +6,11 @@ gem 'sqlite3'
 gem "high_voltage"
 
 group :test do
-  gem "cucumber-rails"
+  gem "cucumber-rails", require: false
   gem "rspec-rails"
   gem "database_cleaner"
+  gem "spork"
+  gem "factory_girl_rails"
 end
 
 group :assets do
