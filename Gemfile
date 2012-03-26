@@ -11,6 +11,7 @@ group :test do
   gem "database_cleaner"
   gem "spork"
   gem "factory_girl_rails"
+  gem "shoulda-matchers"
 end
 
 group :assets do
