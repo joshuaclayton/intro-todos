@@ -19,7 +19,7 @@ Then /^"([^"]*)" should be in my list of things to do$/ do |todo_title|
 end
 
 Then /^I should see a message telling me the todo needs a title$/ do
-  within "ul.errors" do
+  within "ul" do
     page.should have_css("li", text: /Title/)
   end
 end
