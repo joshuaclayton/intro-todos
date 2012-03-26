@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.2'
 
 gem 'sqlite3'
+gem "high_voltage"
 
 group :test do
   gem "cucumber-rails"
