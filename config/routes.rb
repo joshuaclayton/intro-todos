@@ -1,5 +1,5 @@
 IntroTodos::Application.routes.draw do
-  get "sessions/new"
+  resources :sessions, only: [:new, :create]
 
   match "/sign_up", to: "sessions#new"
 
