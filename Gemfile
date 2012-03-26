@@ -6,6 +6,7 @@ gem 'sqlite3'
 
 group :test do
   gem "cucumber-rails"
+  gem "rspec-rails"
   gem "database_cleaner"
 end
 

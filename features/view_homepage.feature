@@ -6,7 +6,7 @@ Feature: View the homepage
 
   Scenario: View the product name
     When I go to the homepage
-    Then I should see the product name in the header
+    Then I should see the product name
 
   Scenario: View the product description
     When I go to the homepage
