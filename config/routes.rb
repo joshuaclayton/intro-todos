@@ -4,6 +4,8 @@ IntroTodos::Application.routes.draw do
   match "/sign_up", to: "sessions#new"
 
   root to: "high_voltage/pages#show", id: "homepage"
+
+  resources :todos, only: [:index, :new, :create]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
