@@ -6,9 +6,12 @@ gem 'sqlite3'
 gem "high_voltage"
 gem "dynamic_form"
 
+group :development, :test do
+  gem "rspec-rails"
+end
+
 group :test do
   gem "cucumber-rails", require: false
-  gem "rspec-rails"
   gem "database_cleaner"
   gem "spork"
   gem "factory_girl_rails"
