@@ -1,4 +1,8 @@
 IntroTodos::Application.routes.draw do
+  get "sessions/new"
+
+  match "/sign_up", to: "sessions#new"
+
   root to: "high_voltage/pages#show", id: "homepage"
   # The priority is based upon order of creation:
   # first created -> highest priority.
